@@ -1,0 +1,42 @@
+/* Aula inicial :D */
+body {
+  /*background: lightblue;*/
+  background-image: URL('http://www.tudoparatudo.com/wp-content/uploads/2017/07/3ae5f02d2207c2e5e153bc0fad391589-1-577x1024.png');
+  background-size: 100vw 100vh;
+  font-family: Arial;
+  height: 100vh;
+}
+
+.menu {
+  font-family: Arial;
+  background: lightgray;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;  
+  /*padding-left: 20px;*/
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
