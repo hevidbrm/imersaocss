@@ -1,15 +1,50 @@
 /* Aula inicial :D */
+
+/*Resete de leva*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   /*background: lightblue;*/
-  background-image: URL('http://www.tudoparatudo.com/wp-content/uploads/2017/07/3ae5f02d2207c2e5e153bc0fad391589-1-577x1024.png');
+  /*background-image: URL('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX11268939.jpg');*/
+  background-image: URL('https://i.pinimg.com/originals/a1/75/4f/a1754fe7952721f74d5fd2dd565f5013.jpg');
   background-size: 100vw 100vh;
-  font-family: Arial;
+  font-family: 'Source Code Pro', monospace;
   height: 100vh;
+  font-size: 12px;
+}
+
+/* Se a tela tiver pelo menos 400px vai carregar esses estilos */
+@media (min-width: 400px) {
+body {
+  font-size: 14px;
+}
+
+/* Se a tela tiver pelo menos 600px vai carregar esses estilos */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+}
+
+header {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   font-family: Arial;
   background: lightgray;
+  position: fixed;
+  width: 100vw;
+
+  top:  0;
 }
 
 .menu ul {
@@ -22,21 +57,45 @@ body {
   /*padding-left: 20px;*/
 }
 
+.menu a {
+  display: block;
+  padding: 20px;
+}
+
 a {
   color: teal;
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 a:hover {
   text-decoration: underline;
+  background-color: black;
+}
+
+.site-title {
+  color: whitesmoke;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.site-subtitle {
+  font-style: italic;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .site-subtitle,
 .site-title {
   color: whitesmoke;
-  text-align: center;
+  text-align: center;  
+  line-height: 1.5em;
 }
 
-.site-subtitle {
-  font-style: italic;
+.portfolio {
+  color: white;
+  font-family: 'Press Start 2P', cursive;  
+  padding-left: 20px;
+}
+
+.img-portfolio {
+  width: 50px;
+  height: 50px;
 }
